@@ -23,7 +23,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": []
           },
@@ -38,7 +38,7 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "extractCss": true,
+              "extractscss": true,
               "namedChunks": false,
               "aot": true,
               "extractLicenses": true,
@@ -72,7 +72,7 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": [],
             "assets": [
@@ -123,5 +123,10 @@
       }
     }
   },
-  "defaultProject": "todaily"
+  "defaultProject": "todaily",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "sscss"
+    }
+  }
 }
